@@ -1,0 +1,20 @@
+loop = 1
+while (loop < 10):
+    ige1 = input("Írj be egy igét E/1-ben (én vmit csináltam)")
+    főnév1 = input("Írj be egy főnevet")
+    főnév2 = input("Írj be egy főnevet ragozva (vki vmije stb)")
+    főnév3 = input("Írj be egy főnevet ragozva (vmit, pl írást)")
+    ige2 = input("E/3 múlt idő ige (pl ivott)")
+    melléknév = input("Írj be egy melléknevet (pl zöld, szép, vizes)")
+    random = input("valamik, pl szépek, lassúak")
+    print("------------------------------------------")
+    print("Ma az utcában", ige1, ", amikor jött egy")
+    print(főnév1,".", főnév2, " az utcában")
+    print("épp",ige2,", amikor hallottam egy",főnév3,".")
+    print()
+    print("Ahol az időjárás mindig",melléknév,", ott")
+    print("valószínű mindig",random, " az emberek.")
+    print("Te és a családod is",random," vagytok?")
+    print("Well, valószínű.")
+    print("------------------------------------------")
+    loop = loop + 1
