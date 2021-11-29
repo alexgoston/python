@@ -1,0 +1,21 @@
+felhasználó_neve = input("Kérem adja meg a nevét!")
+felhasználó_életkora = 99
+while felhasználó_életkora > 18:
+    felhasználó_életkora = int(input("Kérem, adja meg az életkorát!"))
+print("Ágoston Alex")
+olvasmány_1 = "Totyogóknak a kettes számrendszerről"
+olvasmány_2 = "Hackeljük meg az óvodát!"
+olvasmány_3 = "Felhőtechnológia a menzán"
+olvasmány_4 = "Big data a középiskolában"
+print("Üdvözöljük, {}. Ön {} éves.".format(felhasználó_neve, felhasználó_életkora))
+if felhasználó_életkora <= 3:
+    print("Az önnek ajánlott olvasmány a '{}'".format(olvasmány_1))
+elif 4 <= felhasználó_életkora <= 6:
+    print("Az önnek ajánlott olvasmány a '{}'".format(olvasmány_2))
+elif 7 <= felhasználó_életkora <= 14:
+    print("Az önnek ajánlott olvasmány a '{}'".format(olvasmány_3))
+elif 15 <= felhasználó_életkora <= 18:
+    print("Az önnek ajánlott olvasmány a '{}'".format(olvasmány_4))
+fájl = open("eletkor.txt", "w")
+fájl.write(str(felhasználó_életkora))
+fájl.close()
